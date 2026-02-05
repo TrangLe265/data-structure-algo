@@ -1,13 +1,15 @@
 // What is the Big O of the below function? (Hint, you may want to go line by line)
 function funChallenge(input) {
-    let a = 10;
-    a = 50 + 3;
+    let a = 10; //O(1)
+    a = 50 + 3;//O(1)
   
-    for (let i = 0; i < input.length; i++) {
-      anotherFunction();
-      let stranger = true;
-      a++;
+    for (let i = 0; i < input.length; i++) { //O(n)
+      anotherFunction(); //O(n)
+      let stranger = true; //O(n)
+      a++; //O(n)
     }
     return a;
   }
-  
+/* Answer
+- attempt 1: O(1+1+n+n+1+1) => O(4 + n) => O(n)
+*/ 
